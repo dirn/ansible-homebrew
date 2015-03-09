@@ -1,6 +1,6 @@
 ---
 - name: Download
-  git: repo=git@github.com:Homebrew/install.git dest={{ homebrew_installer_root }}/homebrew-installer
+  git: repo=https://github.com/Homebrew/install.git dest={{ homebrew_installer_root }}/homebrew-installer
 
 - name: Install
   command: creates=/usr/local/bin/brew {{ homebrew_installer_root }}/homebrew-installer/install
