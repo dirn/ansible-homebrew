@@ -1,0 +1,11 @@
+---
+# Where to install Homebrew
+homebrew_installer_root: ~
+
+# Which Homebrew libraries to install
+homebrew_libraries: []
+
+# Whether to keep Homebrew up-to-date
+homebrew_update: true
+# Whether to keep Homebrew libraries up-to-date
+homebrew_upgrade_all: true
