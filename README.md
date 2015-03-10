@@ -13,9 +13,9 @@ Role Variables
 
 Several variables are available to configure the role.
 
-To control where Homebrew's installer will live:
+To set where homebrew will be installed:
 
-    homebrew_installer_root: ~
+    homebrew_root: /usr/local
 
 To install which libraries will be installed by Homebrew:
 
@@ -40,7 +40,7 @@ Example Playbook
     - hosts: servers
       roles:
         - role: dirn.homebrew
-          homebrew_installer_root: ~/.homebrew_installer
+          homebrew_root: /opt/homebrew
           homebrew_libraries:
             - git
             - vim

@@ -1,9 +1,9 @@
 ---
-- name: Download
-  git: repo=https://github.com/Homebrew/install.git dest={{ homebrew_installer_root }}/homebrew-installer
+- name: Setup
+  file: dest={{ homebrew_root }} state=directory
 
 - name: Install
-  command: creates=/usr/local/bin/brew {{ homebrew_installer_root }}/homebrew-installer/install
+  shell: creates={{ homebrew_root }}/bin/brew curl -L https://github.com/Homebrew/homebrew/tarball/master | tar xz --strip 1 -C {{ homebrew_root }}
 
 - name: Update
   homebrew: update_homebrew=yes
