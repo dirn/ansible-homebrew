@@ -1,5 +1,5 @@
 ---
 - hosts: localhost
-  remote_user: travis
+  remote_user: root
   roles:
     - ansible-homebrew
