@@ -1,6 +1,6 @@
 ---
 # Where to install Homebrew
-homebrew_installer_root: ~
+homebrew_installer_root: '~'
 
 # Which Homebrew libraries to install
 homebrew_libraries: []
