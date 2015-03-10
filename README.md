@@ -1,6 +1,8 @@
 Homebrew
 ========
 
+[![Build Status](https://travis-ci.org/dirn/ansible-homebrew.svg?branch=master)](https://travis-ci.org/dirn/ansible-homebrew)
+
 An Ansible role to install and update Homebrew.
 
 Requirements
