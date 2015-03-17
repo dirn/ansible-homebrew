@@ -19,7 +19,7 @@ To set where homebrew will be installed:
 
     homebrew_root: /usr/local
 
-To install which libraries will be installed by Homebrew:
+To control which libraries will be installed by Homebrew:
 
     homebrew_libraries: []
 
