@@ -23,6 +23,11 @@ To control which libraries will be installed by Homebrew:
 
     homebrew_libraries: []
 
+To control which cask libraries will be installed by Homebrew:
+
+    homebrew_casks: []
+    homebrew_casks_with_sudo: []
+
 To keep Homebrew up-to-date:
 
     homebrew_update: true
@@ -47,6 +52,12 @@ Example Playbook
             - git
             - vim
             - zsh
+          homebrew_casks:
+            - 1password
+            - alfred
+            - iterm2
+          homebrew_casks_with_sudo:
+            - seil
           homebrew_update: true
           homebrew_upgrade_all: false
 

@@ -17,3 +17,6 @@
 - name: Install libraries
   homebrew: name={{ item }} state=present
   with_items: homebrew_libraries
+
+- include: casks.yml
+  when: homebrew_casks or homebrew_casks_with_sudo
