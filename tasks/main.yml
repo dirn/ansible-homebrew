@@ -12,7 +12,7 @@
 
 - name: Fetch
   get_url:
-      url: https://raw.githubusercontent.com/Linuxbrew/install/master/install
+      url: "https://raw.githubusercontent.com/{{ homebrew_repo_name }}/install/master/install"
       dest: ~/tmp/install
       mode: 0700
   when: linuxbrew_installed.stat.exists != True
